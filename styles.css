@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.greeting-container {
+    text-align: center;
+}
+
+.greeting-text {
+    font-size: 36px;
+    color: #333;
+}
