@@ -25,16 +25,15 @@ pipeline {
                     emailext  subject: 'Unit Test Status - Success', 
                               body: 'Unit Test has been completed successfully.', 
                               to: "sachin.arora080@gmail.com",
-                              attachmentsPattern: 'test.log'
+                              attachLog: 'test.log'
                 }
                 failure {
                     emailext subject: 'Unit Test Status - Failure', 
                               body: 'Unit Test has failed.', 
                              to: "sachin.arora080@gmail.com",
-                              attachmentsPattern: 'test.log'
+                              attachLog: 'test.log'
                 }
             }
-
         }
         stage('Code Quality Check') {
             steps {
