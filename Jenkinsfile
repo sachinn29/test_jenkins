@@ -33,7 +33,7 @@ pipeline {
                              to: "sachin.arora080@gmail.com",
                               attachLog: 'test.log'
                 }
-            }
+            }
         }
         stage('Code Quality Check') {
             steps {
