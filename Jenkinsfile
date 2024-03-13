@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Fetching the source code from the directory path specified by the environment variable: ${env.DIRECTORY_PATH}"
-                echo "Compiling the code and generating any necessary artifacts"
+                echo "Compiling the code and generating any necessary artifacts, updated"
             }
         }
         stage('Test') {
