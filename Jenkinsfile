@@ -75,13 +75,12 @@ pipeline {
             steps {
                 script {
                     echo "Pausing for manual approval..."
-                    input message: "Do you approve deployment to production?", ok: "Deploy"
                 }
             }
         }
         stage('Deploy to Production') {
             steps {
-                echo "Deploying the code to the production environment ${env.PRODUCTION_ENVIRONMENT}"
+                echo "Deploying the code to the production environment "
                
             }
         }
